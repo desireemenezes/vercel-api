@@ -83,7 +83,7 @@
       "relatedTo": "equipment",
       "equipmentId": 1,
       "sectorId": 1,
-      "assignedTo": 2,
+      "assignedTo": 3,
       "completionDate": null,
       "completionNotes": null,
       "partsUsed": []
@@ -97,7 +97,7 @@
       "relatedTo": "equipment",
       "equipmentId": 1,
       "sectorId": 1,
-      "assignedTo": 2,
+      "assignedTo": 4,
       "completionDate": "2025-06-10",
       "completionNotes": "Correção preventiva gps",
       "partsUsed": [
@@ -116,7 +116,7 @@
       "relatedTo": "equipment",
       "equipmentId": 2,
       "sectorId": 2,
-      "assignedTo": 2,
+      "assignedTo": 3,
       "completionDate": "2025-06-10",
       "completionNotes": "Lubrificação do sensor realizada.",
       "partsUsed": [
