@@ -1,0 +1,130 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullName": "Alice Pesquisadora",
+      "email": "alice@station.com",
+      "password": "123456",
+      "role": "researcher"
+    },
+    {
+      "id": 2,
+      "fullName": "Julia Pesquisadora",
+      "email": "julia@station.com",
+      "password": "123456",
+      "role": "researcher"
+    },
+    {
+      "id": 3,
+      "fullName": "Carlos Técnico",
+      "email": "carlos@station.com",
+      "password": "123456",
+      "role": "technician"
+    },
+    {
+      "id": 4,
+      "fullName": "Pedro Técnico",
+      "email": "pedro@station.com",
+      "password": "123456",
+      "role": "technician"
+    },
+    {
+      "id": 5,
+      "fullName": "Gerente Administrador",
+      "email": "manager@station.com",
+      "password": "123456",
+      "role": "manager"
+    }
+  ],
+  "sectors": [
+    {
+      "id": 1,
+      "name": "Laboratório de Biologia",
+      "category": "Biologia"
+    },
+    {
+      "id": 2,
+      "name": "Sala de Meteorologia",
+      "category": "Meteorologia"
+    },
+    {
+      "id": 3,
+      "name": "Sala de Pesquisa",
+      "category": "Pesquisa"
+    }
+  ],
+  "equipments": [
+    {
+      "id": 1,
+      "name": "Microscópio Óptico",
+      "code": "A1B2C3",
+      "model": "MX200",
+      "sectorId": 1,
+      "nextPreventiveDate": "2025-07-01",
+      "notes": "Calibrado recentemente."
+    },
+    {
+      "id": 2,
+      "name": "Estação Meteorológica",
+      "code": "D4E5F6",
+      "model": "WSX3000",
+      "sectorId": 2,
+      "nextPreventiveDate": "2025-07-10",
+      "notes": "Prevenções climáticas"
+    }
+  ],
+  "maintenanceRequests": [
+    {
+      "id": 1,
+      "type": "corrective",
+      "description": "Display do microscópio não está funcionando",
+      "priority": "high",
+      "status": "open",
+      "relatedTo": "equipment",
+      "equipmentId": 1,
+      "sectorId": 1,
+      "assignedTo": 2,
+      "completionDate": null,
+      "completionNotes": null,
+      "partsUsed": []
+    },
+    {
+      "id": 2,
+      "type": "corrective",
+      "description": "Manutenção do gps",
+      "priority": "high",
+      "status": "in_progress",
+      "relatedTo": "equipment",
+      "equipmentId": 1,
+      "sectorId": 1,
+      "assignedTo": 2,
+      "completionDate": "2025-06-10",
+      "completionNotes": "Correção preventiva gps",
+      "partsUsed": [
+        {
+          "name": "Troca display",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "preventive",
+      "description": "Manutenção preventiva agendada",
+      "priority": "medium",
+      "status": "completed",
+      "relatedTo": "equipment",
+      "equipmentId": 2,
+      "sectorId": 2,
+      "assignedTo": 2,
+      "completionDate": "2025-06-10",
+      "completionNotes": "Lubrificação do sensor realizada.",
+      "partsUsed": [
+        {
+          "name": "Óleo lubrificante",
+          "quantity": 1
+        }
+      ]
+    }
+  ]
+}
